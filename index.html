@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="evTransFER: A Transfer Learning Framework for Event-based Facial Expression Recognition">
+  <meta name="keywords" content="Event-based Cameras, Transfer Learning, Deep Learning, Facial Expression Recognition, Facial Reconstruction 
+">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>evTransFER: A Transfer Learning Framework for Event-based Facial Expression Recognition</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://uoh-rislab.github.io/evtransfer/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">evTransFER: A Transfer Learning Framework for Event-based Facial Expression Recognition</h1>
+          <div class="is-size-5 publication-authors">
+
+            <span class="author-block">
+              <a href="https://rodrigo.verschae.org/">Rodrigo Verschae</a><sup>4</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=R7t-SFYAAAAJ">Ignacio Bugueno-Cordova</a><sup>1,3,4</sup>,</span>
+            </span>
+
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Institute of Engineering Sciences, Universidad de O'Higgins, Chile</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="external-link button is-normal is-rounded is-dark"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Datasets</span>
+                  </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    
+    <!-- Paper video. -->
+
+    <!--/ Paper video. -->
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Event-based cameras are bio-inspired sensors that asynchronously capture pixel-intensity changes with microsecond latency, high temporal resolution, and high dynamic range, thereby providing information about spatiotemporal dynamics in the scene. We propose evTransFER, a transfer learning-based framework for facial expression recognition using event-based cameras. The main contribution is a feature extractor designed to encode facial spatiotemporal dynamics, built by training an adversarial generative method on facial reconstruction and transferring the encoder weights to face expression recognition. We show that the proposed transfer-learning method improves facial-expression recognition compared with training a network from scratch. We propose an architecture that incorporates an LSTM to capture longer-term facial expression dynamics and introduces a new event-based representation called TIE. We evaluated the framework using both the synthetic event-based facial expression database e-CK+ and the real neuromorphic dataset NEFER. On e-CK+, evTransFER achieved a recognition rate of 93.6\%, surpassing state-of-the-art methods. For NEFER, which comprises event streams with real sensor noise and sparse activity, the proposed transfer-learning strategy achieved an accuracy of up to 76.7\%. In both datasets, the outcomes surpassed current methodologies and exceeded results when compared to models trained from scratch.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="rows">
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Dataset description</h2>
+
+          <div class="content has-text-justified">
+
+            <p>
+              We present a multi-modal indoor dataset for mobile robots, including synchronized RGB, depth, event streams, and IMU data. It addresses the challenges of event-based monocular depth estimation and other tasks in realistic indoor environments.
+            </p>
+          </div>
+
+          <img src="static/figures/mmid-event-depth_dataset.png" class="" alt="" />
+          <h2 class="subtitle has-text-centered">
+            <span class="dnerf">Figure 1 - Multi-Modal Indoor Dataset for Event-based Monocular Depth Estimation by Mobile Robots. Example of the dataset: RGB frames, Accumulative Polarity Events, BEHI, SAE, Tencode, EROS, and depth ground truth samples. 
+          </h2>
+
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Dataset baselines</h2>
+
+          <div class="content has-text-justified">
+
+            <p>
+              The Cycle Generative Adversarial Network (CycleGAN) is adapted to learn a bidirectional mapping between event-based representations H and monocular depth images Z. This approach uses two generators along with discriminators. The adversarial objective enforces realism in each target domain. Meanwhile, cycle-consistency and identity losses preserve geometric and structural information for robust depth estimation in indoor navigation scenarios.
+            </p>
+          </div>
+
+          <img src="static/figures/cyclegan_arch.png" class="" alt="" />
+          <h2 class="subtitle has-text-centered">
+            <span class="dnerf">Figure 2 - Suggested CycleGAN architecture for event-based monocular depth estimation baseline. Event streams are preprocessed into dense representations, which are then translated into depth images and back through paired generators. Discriminators enforce realism in each domain using a least-squares loss, while cycle consistency enables reconstruction across event and depth domains. 
+          </h2>
+
+
+
+          <div class="content has-text-justified">
+
+            <p>
+              The CycleGAN baseline was trained for 100 epochs with a batch size of 8 and the Adam optimizer. Table 1 summarizes the most relevant hyperparameters.
+            </p>
+          </div>
+
+
+          <!-- Side-by-side tables -->
+          <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+            <table border="1" style="font-family: 'Times New Roman', Times, serif; font-size: 14px; color: #000000; width: 45%; border-collapse: collapse;">
+              <caption>Training hyperparameters and loss configuration.</caption>
+              <thead>
+                <tr>
+                  <th>Parameter</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Epochs</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Batch size</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Learning rate (G)</td>
+                  <td>2 &times; 10<sup>&minus;4</sup></td>
+                </tr>
+                <tr>
+                  <td>Learning rate (D)</td>
+                  <td>2 &times; 10<sup>&minus;4</sup></td>
+                </tr>
+                <tr>
+                  <td>&beta;<sub>1</sub></td>
+                  <td>0.5</td>
+                </tr>
+                <tr>
+                  <td>&beta;<sub>2</sub></td>
+                  <td>0.999</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{verschae2025evtransfer,
+  author="Verschae, Rodrigo
+  and Bugueno-Cordova, Ignacio",
+  title="evTransFER: A Transfer Learning Framework for Event-based Facial Expression Recognition",
+  year="2025",
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <!--
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
